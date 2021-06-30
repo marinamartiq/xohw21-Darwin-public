@@ -19,7 +19,7 @@ Vitis Version: 2020.2
 # Project Organization
 The RTL folder contains the RTL code
 RTL/binary_container_1.xclbin contains the bitstream
-The report of the development of the project is in report/
+The report of the development of the project is in REPORT_xohw21
 host.cpp contains the host
 
 # Project Description
