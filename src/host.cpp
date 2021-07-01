@@ -39,8 +39,7 @@ int main(int argc, char *argv[]){
     }
 
     std::string binaryFile = argv[1];
-	//std::string readsPath = argv[2];
-	srand(time(NULL));
+    srand(time(NULL));
 
     cl_int err;
     cl::CommandQueue commands;
@@ -73,8 +72,6 @@ int main(int argc, char *argv[]){
     std::vector< ap_int<512>, aligned_allocator< ap_int<512> > > data_m4(1);
     data_m4[0]=1;
     std::vector< ap_int<512>, aligned_allocator< ap_int<512> > > data_m5(1);
-
-	// printf("Penalties initialized: %d, %d, %d, %d \n", affine_penalties.match, affine_penalties.mismatch, affine_penalties.gap_opening, affine_penalties.gap_extension);
 
     std::string krnl_name = "KDarwin";
     std::vector<cl::Kernel> krnls(NUM_KERNEL);
